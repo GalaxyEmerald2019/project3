@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title>Pine Valley</title>
+  <desc>Decorative landscape illustration for the responsive gallery project.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#b8e1dd"/>
+      <stop offset="100%" stop-color="#4f772d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="650" cy="110" r="55" fill="#fff7cc" opacity="0.8"/>
+  <path d="M0 430 C120 360, 250 330, 370 380 S640 470, 800 390 L800 600 L0 600 Z" fill="#31572c" opacity="0.85"/>
+  <path d="M0 470 C120 430, 260 420, 410 455 S650 520, 800 470 L800 600 L0 600 Z" fill="#4f772d" opacity="0.75"/>
+  <rect y="520" width="800" height="80" fill="#b8e1dd" opacity="0.45"/>
+  <text x="50%" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#ffffff">Pine Valley</text>
+</svg>
