@@ -6,66 +6,105 @@
     <title>Nature Gallery</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
+<body id="top" data-theme="auto">
     <a class="skip-link" href="#main-content">Skip to the main gallery</a>
 
     <header>
-        <h1>Nature Gallery</h1>
-        <p class="intro">This responsive gallery presents nine original landscape illustrations with a cleaner visual style, stronger typography, and a layout that shifts smoothly from phones to tablets and large screens.</p>
-        <p class="intro">The page is built with a mobile-first grid, includes descriptive alternative text for every image, adapts to dark mode, and removes smooth scrolling for visitors who prefer reduced motion.</p>
+        <p class="eyebrow" data-i18n="eyebrow">Responsive final project</p>
+        <h1 data-i18n="title">Nature Gallery</h1>
+
+        <div class="control-panel" aria-label="Language and theme controls">
+            <div class="control-group" aria-label="Language switcher">
+                <span class="control-label" data-i18n="languageLabel">Language</span>
+                <button type="button" class="control-btn" data-lang="en">EN</button>
+                <button type="button" class="control-btn" data-lang="ru">RU</button>
+            </div>
+
+            <div class="control-group" aria-label="Theme switcher">
+                <span class="control-label" data-i18n="themeLabel">Theme</span>
+                <button type="button" class="control-btn" data-theme-choice="auto" data-i18n="themeAuto">Auto</button>
+                <button type="button" class="control-btn" data-theme-choice="light" data-i18n="themeLight">Light</button>
+                <button type="button" class="control-btn" data-theme-choice="dark" data-i18n="themeDark">Dark</button>
+            </div>
+        </div>
+
+        <p class="intro" data-i18n="intro1">This responsive gallery uses real web images and keeps the layout clean on phones, tablets, and large screens without breaking the course requirements.</p>
+        <p class="intro" data-i18n="intro2">You can switch the language, change the theme, and open every image in a new tab. The page still responds to reduced motion and system color preferences.</p>
+        <p class="hint" data-i18n="hint">Click any image to open the full version in a new tab.</p>
     </header>
 
     <main id="main-content">
-        <section class="gallery" aria-label="Nature photo gallery illustrations">
+        <section class="gallery" aria-label="Nature photo gallery">
             <figure>
-                <img src="images/alpine-dawn.svg" alt="Pink dawn light above layered alpine mountains and a blue lake.">
-                <figcaption>Alpine Dawn</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/mountain,lake?lock=1" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/mountain,lake?lock=1" alt="Mountain lake with rocky slopes and clear water.">
+                </a>
+                <figcaption data-caption="0">Alpine Lake</figcaption>
             </figure>
 
             <figure>
-                <img src="images/pine-lake.svg" alt="Calm lake surrounded by tall pine trees and distant blue hills.">
-                <figcaption>Pine Lake</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/forest,lake?lock=2" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/forest,lake?lock=2" alt="Forest lake bordered by tall evergreen trees.">
+                </a>
+                <figcaption data-caption="1">Forest Mirror</figcaption>
             </figure>
 
             <figure>
-                <img src="images/amber-dunes.svg" alt="Warm amber desert dunes with a bright sun in a clear sky.">
-                <figcaption>Amber Dunes</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/desert,dunes?lock=3" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/desert,dunes?lock=3" alt="Desert dunes shaped by wind under a bright sky.">
+                </a>
+                <figcaption data-caption="2">Desert Dunes</figcaption>
             </figure>
 
             <figure>
-                <img src="images/canyon-flow.svg" alt="Narrow river winding through a deep canyon with orange cliffs.">
-                <figcaption>Canyon Flow</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/canyon,river?lock=4" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/canyon,river?lock=4" alt="River running through a canyon with steep rock walls.">
+                </a>
+                <figcaption data-caption="3">Canyon River</figcaption>
             </figure>
 
             <figure>
-                <img src="images/ocean-evening.svg" alt="Sunset over the ocean with layered waves and a glowing horizon.">
-                <figcaption>Ocean Evening</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/ocean,sunset?lock=5" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/ocean,sunset?lock=5" alt="Ocean waves glowing under a warm sunset.">
+                </a>
+                <figcaption data-caption="4">Ocean Sunset</figcaption>
             </figure>
 
             <figure>
-                <img src="images/golden-meadow.svg" alt="Wide meadow with tall golden grass and rolling hills in the distance.">
-                <figcaption>Golden Meadow</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/meadow,grassland?lock=6" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/meadow,grassland?lock=6" alt="Open meadow with long grass and soft daylight.">
+                </a>
+                <figcaption data-caption="5">Golden Meadow</figcaption>
             </figure>
 
             <figure>
-                <img src="images/snow-crest.svg" alt="Snowy mountain peak under a crisp pale sky with cool blue shadows.">
-                <figcaption>Snow Crest</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/snow,mountain?lock=7" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/snow,mountain?lock=7" alt="Snow covered mountain peak under a pale sky.">
+                </a>
+                <figcaption data-caption="6">Snow Crest</figcaption>
             </figure>
 
             <figure>
-                <img src="images/valley-trail.svg" alt="Green valley trail passing between dense forested hills.">
-                <figcaption>Valley Trail</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/valley,forest?lock=8" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/valley,forest?lock=8" alt="Green valley filled with forest and a winding trail.">
+                </a>
+                <figcaption data-caption="7">Green Valley</figcaption>
             </figure>
 
             <figure>
-                <img src="images/mirror-water.svg" alt="Still reflective water mirroring hills and a soft pastel sky.">
-                <figcaption>Mirror Water</figcaption>
+                <a class="image-link" href="https://loremflickr.com/1800/1200/reflection,lake?lock=9" target="_blank" rel="noopener">
+                    <img src="https://loremflickr.com/1200/900/reflection,lake?lock=9" alt="Still lake reflecting hills and sky.">
+                </a>
+                <figcaption data-caption="8">Mirror Water</figcaption>
             </figure>
         </section>
     </main>
 
     <footer>
-        <a class="top-link" href="#top">Jump to the Top</a>
+        <a class="top-link" href="#top" data-i18n="topLink">Jump to the Top</a>
     </footer>
+
+    <script src="js/site.js"></script>
 </body>
 </html>
+
