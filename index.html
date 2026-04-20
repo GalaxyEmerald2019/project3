@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nature Gallery</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <h1 id="top">Nature Gallery</h1>
-  </header>
+<body id="top">
+    <header>
+        <h1>Nature Gallery</h1>
+    </header>
 
-  <main>
-    <p>This gallery highlights nine illustrated landscapes, from mountain sunrises to quiet lakes and wide open steppe scenes. The goal of the page is to show how one simple layout can stay clean and readable across phones, tablets, and large screens.</p>
+    <main>
+        <p>This gallery presents nine simple landscape illustrations inspired by sunrise light, lakes, forests, coasts, mountain views, and open steppe scenes. The goal is to keep the page readable and well structured while still making the layout feel different on phones, tablets, and large screens.</p>
 
-    <p>The design uses a mobile-first grid, adapts to user color preferences, and turns off motion effects for people who prefer reduced movement. Each image includes descriptive alternative text so the page stays more accessible and easier to review.</p>
+        <p>The design uses a mobile-first grid, responds to dark mode preferences, and turns off smooth scrolling for people who prefer reduced motion. Every image includes descriptive alternative text so the gallery is easier to understand for screen readers and easier to review during accessibility checks.</p>
 
-    <div class="grid">
-      <figure>
-        <img src="images/mountain-sunrise.svg" alt="Illustration of a bright sunrise behind layered mountains.">
-        <figcaption>Mountain Sunrise</figcaption>
-      </figure>
-      <figure>
-        <img src="images/forest-lake.svg" alt="Illustration of a calm lake surrounded by pine trees.">
-        <figcaption>Forest Lake</figcaption>
-      </figure>
-      <figure>
-        <img src="images/desert-dunes.svg" alt="Illustration of warm desert dunes under a bright sky.">
-        <figcaption>Desert Dunes</figcaption>
-      </figure>
-      <figure>
-        <img src="images/canyon-river.svg" alt="Illustration of a river winding through a rocky canyon.">
-        <figcaption>Canyon River</figcaption>
-      </figure>
-      <figure>
-        <img src="images/coastal-evening.svg" alt="Illustration of waves and a glowing sunset over the coast.">
-        <figcaption>Coastal Evening</figcaption>
-      </figure>
-      <figure>
-        <img src="images/golden-steppe.svg" alt="Illustration of an open steppe with tall golden grass.">
-        <figcaption>Golden Steppe</figcaption>
-      </figure>
-      <figure>
-        <img src="images/snowy-peak.svg" alt="Illustration of a snowy mountain peak under a cold sky.">
-        <figcaption>Snowy Peak</figcaption>
-      </figure>
-      <figure>
-        <img src="images/pine-valley.svg" alt="Illustration of a green valley filled with pine trees.">
-        <figcaption>Pine Valley</figcaption>
-      </figure>
-      <figure>
-        <img src="images/mirror-lake.svg" alt="Illustration of a still lake reflecting the sky and hills.">
-        <figcaption>Mirror Lake</figcaption>
-      </figure>
-    </div>
-  </main>
+        <section class="gallery" aria-label="Illustrated nature scenes">
+            <figure>
+                <img src="images/mountain-sunrise.svg" alt="Illustrated sunrise behind layered blue mountains.">
+                <figcaption>Mountain Sunrise</figcaption>
+            </figure>
 
-  <footer>
-    <a href="#top">Jump to the Top</a>
-  </footer>
+            <figure>
+                <img src="images/forest-lake.svg" alt="Illustrated lake surrounded by pine trees and calm water reflections.">
+                <figcaption>Forest Lake</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/desert-dunes.svg" alt="Illustrated desert dunes under a warm bright sky.">
+                <figcaption>Desert Dunes</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/canyon-river.svg" alt="Illustrated river cutting through a rocky canyon.">
+                <figcaption>Canyon River</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/coastal-evening.svg" alt="Illustrated coastal sunset with waves and an evening sky.">
+                <figcaption>Coastal Evening</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/golden-steppe.svg" alt="Illustrated open steppe with golden tall grass under a blue sky.">
+                <figcaption>Golden Steppe</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/snowy-peak.svg" alt="Illustrated snowy mountain peak beneath a cold pale sky.">
+                <figcaption>Snowy Peak</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/pine-valley.svg" alt="Illustrated green valley filled with dark pine trees.">
+                <figcaption>Pine Valley</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mirror-lake.svg" alt="Illustrated still lake reflecting hills and soft sky colors.">
+                <figcaption>Mirror Lake</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#top">Jump to the Top</a>
+    </footer>
 </body>
 </html>
+
